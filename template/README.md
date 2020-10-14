@@ -37,6 +37,24 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### `yarn storybook`
+
+Runs the storybook in the development mode.<br />
+Open [http://localhost:6060](http://localhost:6060) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+### `yarn svgr`
+
+Run [svgr](https://react-svgr.com/) command.<br />
+Transform svg files in `./assets` to svg components in `./src/Svgs`
+
+### `yarn lint` & `yarn lint:fix`
+
+Run eslint command (only `.ts`, `.tsx` files).<br />
+`lint:fix` command is argumented `--fix`.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

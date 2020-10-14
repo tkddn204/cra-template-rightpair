@@ -1,6 +1,6 @@
-# cra-template-typescript
+# cra-template-rightpair
 
-This is made by rightpair TypeScript template for [Create React App](https://github.com/facebook/create-react-app).
+This is TypeScript template made by rightpair for [Create React App](https://github.com/facebook/create-react-app).
 
 And Referenced by [cra-template-redux-typescript](https://github.com/reduxjs/cra-template-redux-typescript).
 
