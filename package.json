@@ -2,9 +2,23 @@
   "bugs": {
     "url": "https://github.com/tkddn204/cra-template-rightpair/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tkddn204/cra-template-rightpair"
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.4.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
+    "@testing-library/user-event": "^12.1.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet-async": "^1.0.7",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "styled-components": "^5.2.0",
+    "styled-normalize": "^8.0.7",
+    "styled-theming": "^2.2.0",
+    "web-vitals": "^0.2.4"
   },
   "description": "The template is made by rightpair for Create React App.",
   "devDependencies": {
@@ -47,15 +61,15 @@
   "engines": {
     "node": ">=12"
   },
+  "files": [
+    "template",
+    "template.json"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
   },
-  "files": [
-    "template",
-    "template.json"
-  ],
   "keywords": [
     "react",
     "react-helmet-async",
@@ -69,6 +83,13 @@
     "template",
     "typescript"
   ],
+  "license": "MIT",
+  "main": "template.json",
+  "name": "cra-template-rightpair",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tkddn204/cra-template-rightpair"
+  },
   "scripts": {
     "build-storybook": "build-storybook -s public",
     "clean": "rimraf build",
@@ -77,8 +98,5 @@
     "storybook": "start-storybook -p 6006 -s public",
     "svgr": "npx @svgr/cli ./assets --out-dir ./src/Svgs"
   },
-  "license": "MIT",
-  "name": "cra-template-rightpair",
-  "version": "1.0.1",
-  "main": "template.json"
+  "version": "1.0.2"
 }
