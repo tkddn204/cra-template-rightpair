@@ -1,0 +1,75 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:react/recommended",
+    "plugin:jest/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier",
+    "prettier/react",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "overrides": [{
+    "files": [
+      "**/*.tsx"
+    ],
+    "rules": {
+      "react/prop-types": "off"
+    }
+  }, {
+    "files": [
+      "**/*Slice.ts"
+    ],
+    "rules": {
+      "@typescript-eslint/no-unused-vars-experimental": "off"
+    }
+  }, {
+    "files": [
+      "./src/Svgs/*.tsx"
+    ],
+    "rules": {
+      "react/jsx-props-no-spreading": "off"
+    }
+  }],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "createDefaultProgram": true,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "project": "./tsconfig.json",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "jest"
+  ],
+  "root": true,
+  "rules": {
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars-experimental": "error",
+    "import/prefer-default-export": "off",
+    "jsx-a11y/accessible-emoji": "off",
+    "no-console": "error",
+    "no-param-reassign": "off",
+    "react/jsx-fragments": "off",
+    "import/no-extraneous-dependencies": [
+      "off",
+      "**/*.stories.tsx"
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}
